@@ -1,0 +1,237 @@
+@font-face {
+  font-family: gilroy;
+  src: url("./assets/fonts/Gilroy-Light.otf");
+}
+@font-face {
+  font-family: gilroybold;
+  src: url("./assets/fonts/Gilroy-ExtraBold.otf");
+}
+@font-face {
+  font-family: fanta;
+  src: url("./assets/fonts/KetikaSans-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+  /* background-color: black; */
+  color: white;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100vh;
+  width: 100%;
+  background-color: #821600;
+}
+/* here have code for styling navbar */
+#nav {
+  position: fixed;
+  height: 12vh;
+  width: 100%;
+  padding: 0vw 10vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+  /* border: 1px solid red; */
+}
+.navleft > img {
+  height: 5vh;
+}
+.navcenter {
+  display: flex;
+  align-items: center;
+  gap: 20vh;
+}
+.navcenter > a {
+  font-family: gilroybold;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navright {
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  /* border: 2px solid blue; */
+}
+.navright > i {
+  font-size: 20px;
+}
+/* ------------------------------------------ */
+/* hera i style the hero section */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(150deg, rgb(249, 146, 3), rgb(153, 24, 4));
+}
+#hero > .fanta {
+  position: absolute;
+  width: 40%;
+  z-index: 1;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+  /* border: 1px solid blue; */
+}
+#hero > .orange1 {
+  position: absolute;
+  width: 15%;
+  top: 10%;
+  left: 32%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+  /* border: 1px solid black; */
+}
+#hero > .orange2 {
+  position: absolute;
+  width: 20%;
+  top: 60%;
+  right: 31%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+  /* border: 1px solid black; */
+  z-index: 2;
+}
+.fantatxt {
+  font-family: gilroybold;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 50vh;
+}
+.leaf1 {
+  position: absolute;
+  width: 27vh;
+  top: 17%;
+  left: 11%;
+  transform: rotate(65deg);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+  /* border: 1px solid red; */
+}
+.leaf2 {
+  position: absolute;
+  width: 12%;
+  top: 55%;
+  left: 75%;
+  transform: rotate(13deg);
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+.cocoleaf {
+  position: absolute;
+  width: 23%;
+  top: 5%;
+  left: 78%;
+  transform: rotate(-5deg);
+}
+/* -------------------------------------- */
+/* here i style the scond div */
+#two {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
+}
+.left-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(76, 10, 10);
+}
+.left-two > svg {
+  margin-top: 50vh;
+  width: 60%;
+  transform: rotateX(50deg);
+}
+.right-two {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5vh;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(76, 10, 10);
+}
+.right-two > h1 {
+  font-size: 5vw;
+  font-family: gilroybold;
+}
+.right-two > p {
+  font-size: 1vw;
+  width: 96%;
+}
+
+/* here i style the third div */
+#third {
+  display: flex;
+  align-items: center;
+  gap: 5vh;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(150deg, rgb(249, 146, 3), rgb(153, 24, 4));
+}
+#third > .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 27vh;
+  margin-bottom: 0;
+  height: 60vh;
+  position: relative;
+  width: 53vh;
+  top: 2vh;
+  border-radius: 2vh;
+  background-color: white;
+}
+#third > .card:nth-child(1) {
+  background-color: #385a90;
+}
+#third > .card:nth-child(2) {
+  background-color: #FA5E11;
+}
+#third > .card:nth-child(3) {
+  background-color: #c42025;
+}
+/* card button */
+.card > h1 {
+  color: black;
+  font-size: 5vh;
+  font-family: fanta;
+  /* text-transform: uppercase; */
+}
+.card > button {
+  background-color: orange;
+  color: white;
+  width: 17vh;
+  font-size: 3vh;
+  font-family: gilroybold;
+  border: none;
+  padding: 1vw;
+  border-radius: 2vw;
+}
+.card > h1 {
+  margin-top: 40vh;
+}
+.pepsi {
+  width: 65%;
+  top: -8%;
+  position: absolute;
+  /* transition: all cubic-bezier(0.19, 1, 0.22, 1)1s; */
+}
+.coca-cola {
+  position: absolute;
+  top: -4%;
+  width: 43%;
+  /* transition: all cubic-bezier(0.19, 1, 0.22, 1)1s; */
+}
+
